@@ -1,0 +1,31 @@
+ <!DOCTYPE html>
+<html>
+<link href="style.css" rel="stylesheet" media="all" type="text/css">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>imageTest</title>
+<img src="mario.png" height="100px" width="100px" onclick="choix();"/> 
+<div class="mario2">
+<img id="im" src="mario.png" height="100px" width="100px" onclick="fBool();"/>
+</div>
+</head>
+<body>
+
+<script>
+var x=0
+function choix(){
+  if (x==0){
+  document.getElementById("im").style.opacity = 0;
+  x=1;
+  }else{
+  document.getElementById("im").style.opacity = 1;
+  x=0;
+  }
+}
+function fBool() {
+  alert("x="+x);
+}
+</script>
+</body>
+</html> 
